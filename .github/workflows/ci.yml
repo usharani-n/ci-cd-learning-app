@@ -18,6 +18,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check environment
+        run: |
+          python --version
+          pip --version
+          pwd
+          ls
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
